@@ -17,14 +17,13 @@ export default function Project({ project, neonBox }: { project: any; neonBox: s
       style={{
         boxShadow:
           "0 0 2px 1px #3fdad8, 0 0 4px 2px #3b82f6, 0 0 6px 2px #a78bfa, 0 0 8px 2px #38bdf8",
-        borderImage: "linear-gradient(135deg, #3fdad8, #3b82f6, #a78bfa, #38bdf8) 1",
         borderColor: "transparent",
         color: "#e0e7ef",
         textDecoration: "none",
         borderRadius: "20px",
       }}
     >
-      <h2 className="text-xl font-bold mb-2">
+      <h2 className="text-xl font-bold mb-2 text-[#BFA181]">
         {project.name}
       </h2>
       <p className="mb-4">{project.description}</p>

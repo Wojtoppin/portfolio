@@ -1,18 +1,26 @@
+/* Custom dark scrollbar for all scrollable elements */
+html, body, * {
+  scrollbar-width: thin;
+  scrollbar-color: #164e63 #1e293b;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #0A1828;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #0A1828;
+  border-radius: 8px;
+}
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-
-}
-body {
-  min-height: 100vh;
-  background: #18181b;
-  overflow-x: hidden;
-}
 
 #stars, #stars2, #stars3 {
   position: absolute;
@@ -44,7 +52,7 @@ body {
 }
 .App {
   min-height: 100vh;
-  background: #18181b;
+  background: #0A1828;
   overflow: hidden;
 }
 

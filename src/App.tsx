@@ -8,7 +8,7 @@ import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
-    <div className="App" style={{ position: "relative", minHeight: "100vh" }}>
+    <div className="App bg-gradient-to-b from-[#0A1828] to-[black]" style={{ position: "relative", minHeight: "100vh" }}>
       <StarBackground />
       <Header />
       <Timeline>
