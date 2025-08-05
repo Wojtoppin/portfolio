@@ -7,7 +7,7 @@ interface TimelineProps {
 const Timeline: React.FC<TimelineProps> = ({ children }) => {
   const items = React.Children.toArray(children);
   return (
-    <div className="flex flex-col w-full max-w-6xl mx-auto pb-6 pt-20 relative">
+    <div className="flex flex-col w-full max-w-6xl mx-auto pb-12 pt-30 relative">
       <div className="absolute left-1 top-0 h-full w-1 bg-gradient-to-b to-[#BFA181] from-[#BFA181] opacity-40" />
         
       {items.map((item: any, i) => (

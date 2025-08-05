@@ -15,9 +15,7 @@ function App() {
       <Timeline>
         <ProjectsHolder timelineText="My favourite projects:"/>
         <AboutMe timelineText="About me:" />
-        <WorkPlaces timelineText="I've worked at: "/>
-        <ProjectsHolder timelineText="My favourite projects:" />
-        <ProjectsHolder timelineText="My favourite projects:" />
+        <WorkPlaces timelineText="My work experience: "/>
       </Timeline>
     </div>
   );
