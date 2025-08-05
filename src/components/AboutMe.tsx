@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 const AboutMe = ({ timelineText }: { timelineText: string }) => {
   const [content, setContent] = useState("");
@@ -26,7 +28,31 @@ const AboutMe = ({ timelineText }: { timelineText: string }) => {
         borderRadius: "20px",
       }}
     >
-      <ReactMarkdown>{content.slice(17)}</ReactMarkdown>
+      <div className="prose prose-invert text-left max-w-none">
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeRaw]}
+                      components={{
+                        h1: ({ node, ...props }) => (
+                          <h1 className="text-3xl font-bold mt-6 mb-4" {...props} />
+                        ),
+                        h2: ({ node, ...props }) => (
+                          <h2 className="text-2xl font-semibold mt-4 mb-3" {...props} />
+                        ),
+                        p: ({ node, ...props }) => (
+                          <p className="mb-4 text-gray-300" {...props} />
+                        ),
+                        ul: ({ node, ...props }) => (
+                          <ul className="list-disc pl-6 mb-4" {...props} />
+                        ),
+                        code: ({ node, ...props }) => (
+                          <code className="bg-gray-800 text-pink-400 px-1 rounded" {...props} />
+                        ),
+                      }}
+                    >
+                      {content.slice(17)}
+                    </ReactMarkdown>
+                  </div>
     </div>
   );
 };

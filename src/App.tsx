@@ -5,6 +5,7 @@ import StarBackground from "./components/StarBackground";
 import ProjectsHolder from "./components/ProjectsHolder";
 import Timeline from "./components/Timeline";
 import AboutMe from "./components/AboutMe";
+import WorkPlaces from "./components/WorkPlaces";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Timeline>
         <ProjectsHolder timelineText="My favourite projects:"/>
         <AboutMe timelineText="About me:" />
+        <WorkPlaces timelineText="I've worked at: "/>
         <ProjectsHolder timelineText="My favourite projects:" />
         <ProjectsHolder timelineText="My favourite projects:" />
       </Timeline>
