@@ -1,0 +1,34 @@
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+
+const AboutMe = ({ timelineText }: { timelineText: string }) => {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/wojtoppin/wojtoppin/main/README.md"
+    )
+      .then((res) => res.text())
+      .then(setContent);
+  }, []);
+
+  return (
+    <div
+      className="p-6 m-4 flex-1 min-w-[220px] text-center shadow-lg bg-gray-900 bg-opacity-80 transition-transform hover:scale-101"
+      style={{
+        boxShadow:
+          "0 0 2px 1px #3fdad8, 0 0 4px 2px #3b82f6, 0 0 6px 2px #a78bfa, 0 0 8px 2px #38bdf8",
+        borderImage:
+          "linear-gradient(135deg, #3fdad8, #3b82f6, #a78bfa, #38bdf8) 1",
+        borderColor: "transparent",
+        color: "#e0e7ef",
+        textDecoration: "none",
+        borderRadius: "20px",
+      }}
+    >
+      <ReactMarkdown>{content.slice(17)}</ReactMarkdown>
+    </div>
+  );
+};
+
+export default AboutMe;
