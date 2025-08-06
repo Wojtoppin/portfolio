@@ -1,3 +1,4 @@
+// @ts-ignore: timelineText is intentionally unused
 export default function WorkPlaces({
   timelineText,
 }: {
@@ -50,7 +51,6 @@ export default function WorkPlaces({
         <p className="mb-4 text-white">
           Here you can find information about my work experience.
         </p>
-        
       </div>
 
       {/* Bottom: Timeline (left) and References (right) */}
@@ -69,7 +69,9 @@ export default function WorkPlaces({
           }}
           className="flex-1 bg-gray-900 bg-opacity-80 rounded-xl p-6 min-h-[220px] text-center shadow-lg transition-transform hover:scale-101"
         >
-          <h3 className="text-lg font-semibold text-[#BFA181] mb-4">Timeline</h3>
+          <h3 className="text-lg font-semibold text-[#BFA181] mb-4">
+            Timeline
+          </h3>
           <div className="relative flex flex-col items-start pl-6 w-full max-w-xs mx-auto">
             {/* Vertical line */}
             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#BFA181] to-[#a78bfa] opacity-40" />
@@ -114,8 +116,12 @@ export default function WorkPlaces({
           }}
           className="flex-1 bg-gray-900 bg-opacity-80 rounded-xl p-6 min-h-[220px] text-center shadow-lg transition-transform hover:scale-101"
         >
-          <h3 className="text-lg font-semibold text-[#BFA181] mb-2">Work References</h3>
-          <p className="text-gray-300 mb-4 text-sm">Download my work references and recommendation letters here.</p>
+          <h3 className="text-lg font-semibold text-[#BFA181] mb-2">
+            Work References
+          </h3>
+          <p className="text-gray-300 mb-4 text-sm">
+            Download my work references and recommendation letters here.
+          </p>
           {/* Example download button, replace href with your file */}
           <a
             href="/src/assets/Referencje%20Praktyki%20Wojciech%20Polit.pdf"

@@ -1,21 +1,28 @@
 import React from "react";
-import Achievement from "./Achievement.tsx";
+import Achievement from "./Achievement";
 
 const achievements = [
   {
     name: "Vocational Diploma",
-    description: "Completed a vocational diploma in Programming with a score of 96%.",
+    description:
+      "Completed a vocational diploma in Programming with a score of 96%.",
     issuer: "Polish Regional Examination Board",
+    place: undefined, // Add this line
   },
   {
     name: "AI4Youth finalist",
     description: "Finalist in the AI4Youth competition.",
     issuer: "Intel & Polish Ministry of Economic Development and Technology",
+    place: "Finalist", // Example with value
   },
   // Add more achievements here
 ];
+type AchievementsProps = {
+  timelineText?: string;
+};
+// @ts-ignore: timelineText is intentionally unused
+const Achievements: React.FC<AchievementsProps> = ({ timelineText }) => (
 
-const Achievements: React.FC = ({ timelineText }: { timelineText?: string }) => (
   <div
     className="px-4 pt-6 pb-2 m-10 flex-1 min-w-[220px] text-center shadow-lg bg-gray-900 bg-opacity-80 transition-transform hover:scale-101"
     style={{
@@ -36,7 +43,7 @@ const Achievements: React.FC = ({ timelineText }: { timelineText?: string }) => 
           key={idx}
           name={ach.name}
           description={ach.description}
-          place={ach.place ? ach.place : undefined}
+          place={ach.place}
           issuer={ach.issuer}
         />
       ))}

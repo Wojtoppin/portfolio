@@ -23,7 +23,7 @@ const neonBox =
   " p-6 m-4 flex-1 min-w-[220px] max-w-xs text-center shadow-lg" +
   " bg-gray-900 bg-opacity-80" +
   " transition-transform hover:scale-105";
-
+// @ts-ignore: timelineText is intentionally unused
 const Projects = ({timelineText}: {timelineText:string}) => {
 
   return (
