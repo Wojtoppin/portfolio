@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
       {/* Right side: contact links */}
       <div className="flex flex-col items-end text-white space-y-4">
         <a
-          href="https://www.linkedin.com/in/wojtoppin/"
+          href="https://www.linkedin.com/in/wojciech-polit-908b76367/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-emerald transition text-lg font-semibold flex items-center"
@@ -53,10 +53,10 @@ const Footer: React.FC = () => {
           <span className="hidden sm:inline">LinkedIn</span>
         </a>
         <a
-          href="mailto:wojtoppin@gmail.com"
+          href="mailto:wojtopofficial@gmail.com"
           className="hover:text-cyan-300 transition text-lg font-semibold"
         >
-          <span className="hidden sm:inline">wojtoppin@gmail.com</span>
+          <span className="hidden sm:inline">wojtopofficial@gmail.com</span>
           <span className="sm:hidden">Mail</span>
         </a>
         <a
