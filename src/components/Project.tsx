@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import ProjectDialog from "./ProjectDialog";
 import type { ProjectDialogRef } from "./ProjectDialog";
 export default function Project({ project, neonBox }: { project: any; neonBox: string }) {

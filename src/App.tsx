@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Header from "./components/header";
 import StarBackground from "./components/StarBackground";
