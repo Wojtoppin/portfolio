@@ -6,16 +6,18 @@ import ProjectsHolder from "./components/ProjectsHolder";
 import Timeline from "./components/Timeline";
 import AboutMe from "./components/AboutMe";
 import WorkPlaces from "./components/WorkPlaces";
+import Achievements from "./components/Achievements";
 
 function App() {
   return (
-    <div className="App bg-gradient-to-b from-[#0A1828] to-[black]" style={{ position: "relative", minHeight: "100vh" }}>
+    <div className="App" style={{ position: "relative", minHeight: "100vh" }}>
       <StarBackground />
       <Header />
       <Timeline>
         <ProjectsHolder timelineText="My favourite projects:"/>
         <AboutMe timelineText="About me:" />
         <WorkPlaces timelineText="My work experience: "/>
+        <Achievements timelineText="My achievements:" />
       </Timeline>
     </div>
   );

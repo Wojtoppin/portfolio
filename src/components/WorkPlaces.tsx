@@ -5,9 +5,15 @@ export default function WorkPlaces({
 }) {
   const workTimeline = [
     {
-      company: "(PGB) TotalEnergies",
+      company: "Ziroly",
       role: "Fullstack developer",
-      period: "2025.06 - Present",
+      period: "2025.08 - present",
+      color: "pink",
+    },
+    {
+      company: "(PGB) TotalEnergies",
+      role: "Fullstack developer + AI developer",
+      period: "2025.06 - 2025.08",
       color: "#BFA181",
     },
     {
@@ -42,7 +48,7 @@ export default function WorkPlaces({
       >
         <h2 className="text-2xl font-bold mb-2 text-[#BFA181]">Workplaces</h2>
         <p className="mb-4 text-white">
-          Here you can find information about my previous workplaces.
+          Here you can find information about my work experience.
         </p>
         
       </div>
