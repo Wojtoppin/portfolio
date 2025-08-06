@@ -7,6 +7,7 @@ import Timeline from "./components/Timeline";
 import AboutMe from "./components/AboutMe";
 import WorkPlaces from "./components/WorkPlaces";
 import Achievements from "./components/Achievements";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <WorkPlaces timelineText="My work experience: "/>
         <Achievements timelineText="My achievements:" />
       </Timeline>
+      <Footer />
     </div>
   );
 }
